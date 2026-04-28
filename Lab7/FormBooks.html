@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir un Libro</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#050505;
+        }
+
+        .container{
+            background:white;
+            width:300px;
+            margin:100px auto;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        input{
+            width:90%;
+            padding:8px;
+            margin:8px 0;
+        }
+
+        input[type="submit"]{
+            background:black;
+            color:white;
+        }
+
+        h1{
+            text-align:center;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+
+    <h1>Registrar Libro</h1>
+    <form method="post" action="Register_book.php">
+        Titulo: <input type="text" name="title" size="100" required/><br/>
+        Autor: <input type="text" name="author" size="60" required/><br/>
+        Año: <input type="number" name="year" size="4" required/><br/>
+        URL: <input type="text" name="url" size="500" required/><br/>
+        Especialidad: <input type="text" name="specialty" size="60" required/><br/>
+        Editorial: <input type="text" name="publisher" size="70" required/><br/>
+        <input type="submit" value="Save"/>
+    </form>
+    </div>
+</body>
+</html>
