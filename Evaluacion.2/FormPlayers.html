@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Jugador</title>
+    <style>
+
+    body{
+        font-family: Arial;
+        background:#dbeafe;
+    }
+
+    .container{
+        background:white;
+        width:300px;
+        margin:100px auto;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    input{
+        width:90%;
+        padding:8px;
+        margin:8px 0;
+        border:1px solid #93c5fd;
+        border-radius:5px;
+    }
+
+    input[type="submit"]{
+        background:#2563eb;
+        color:white;
+        border:none;
+    }
+
+    h1{
+        text-align:center;
+        color:#1e3a8a;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+
+    <h1>Registrar Jugador</h1>
+    <form method="post" action="Register_player.php" enctype="multipart/form-data">
+        Nombre:<input type="text" name="nombre" required><br/>
+        Posición:<input type="text" name="posicion" required><br/>
+        Equipo:<input type="text" name="equipo" required><br/>
+        Liga:<input type="text" name="liga" required><br/>  
+        Marca Vehículo:<input type="text" name="marca" required/><br/>
+        Modelo Vehículo:<input type="text" name="modelo" required/><br/>
+        Imagen Vehículo:<input type="file" name="imagen_vehiculo" required/><br/>
+        Imagen Jugador:<input type="file" name="imagen" required><br/>
+        <input type="submit" value="Guardar">
+    </form>
+    </div>
+</body>
+</html>
